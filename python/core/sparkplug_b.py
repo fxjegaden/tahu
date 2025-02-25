@@ -242,6 +242,7 @@ def addMetric(container, name, alias, type, value, timestamp=int(round(time.time
     elif type == MetricDataType.UInt32:
         metric.datatype = MetricDataType.UInt32
         metric.int_value = value
+        metric.long_value = value
     elif type == MetricDataType.UInt64:
         metric.datatype = MetricDataType.UInt64
         metric.long_value = value
